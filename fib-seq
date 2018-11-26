@@ -1,10 +1,9 @@
-n1 = 5
-n2 = 8
-print('fibonacci sequence:')
+def fibseq(n):
+    f1 = 5
+    f2 = 8
+    for x in range(0, n):
+        f2 = f1 + f2
+        f1 = f2 - f1
+        print(f2, end=" ")
 
-for number in range(10):
-    n2 = n1 + n2
-    n1 = n2 - n1
-    if n2 ==13:
-        pass
-    print(str(n2))
+fibseq(10)
